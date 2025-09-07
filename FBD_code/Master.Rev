@@ -1,0 +1,38 @@
+setwd("/Users/erent/Desktop/PaleoMasters/Second_Semester/Phylogenetics/own_test_exercise") #Make sure to adapt depending on directory!
+#source("scripts/Master.Rev")
+
+
+taxa <- readTaxonData("data/Thyreo_ages_pbdb.tsv") #Change this depending on which age dataset you use
+
+
+morpho <- readDiscreteCharacterData("data/Norman_2021a_edited.nex") # Change this depending on which clade you use
+
+morpho.addMissingTaxa( taxa )
+
+n_taxa <- taxa.size()
+
+moves = VectorMoves()
+
+source("scripts/model_FBDP.Rev") # FBD tree prior
+
+#source("scripts/model_UExp.Rev") # UExp relaxed clock
+
+#source("scripts/model_GTRG.Rev") # Molecular substitution model (GTR+G)
+
+source("scripts/model_Morph.Rev") # Morphological character change model
+
+mymodel = model(fbd_tree)
+
+monitors = VectorMonitors()
+
+monitors.append( mnModel(filename="output/thyreo_pbdb_6.log", printgen=10) )
+monitors.append( mnFile(filename="output/thyreo_pbdb_6.trees", printgen=10, fbd_tree) )
+monitors.append( mnScreen(printgen=10, num_samp_anc, age_Thyreos) )
+
+mymcmc = mcmc(mymodel, monitors, moves)
+
+mymcmc.run(generations=300000)
+
+trace = readTreeTrace("output/thyreo_pbdb_6.trees")
+mccTree(trace, file="output/thyreo_pbdb_6.mcc.tre" )
+consensusTree(trace, file="output/thyreo_pbdb_6.majrule.tre")

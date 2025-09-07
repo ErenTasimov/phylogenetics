@@ -1,0 +1,69 @@
+speciation_rate ~ dnExponential(10)
+extinction_rate ~ dnExponential(10)
+
+moves.append( mvScale(speciation_rate, lambda=0.01, weight=1) )
+moves.append( mvScale(speciation_rate, lambda=0.1,  weight=1) )
+moves.append( mvScale(speciation_rate, lambda=1.0,  weight=1) )
+
+moves.append( mvScale(extinction_rate, lambda=0.01, weight=1) )
+moves.append( mvScale(extinction_rate, lambda=0.1,  weight=1) )
+moves.append( mvScale(extinction_rate, lambda=1,    weight=1) )
+
+diversification := speciation_rate - extinction_rate
+turnover := extinction_rate/speciation_rate
+
+rho <- 0.0
+
+psi ~ dnExponential(10) 
+
+origin_time ~ dnUnif(233.6, 251.902)  #Adjust these values depending on studied group; 
+#If Pachys, then Lower Yinlong age (See .tsv file) and the lower age of 
+#Lesothosaurus (See Thyrephoran .tsv file), which is a suitable choice, as an early 
+#neornithischian (Following Buttler et al. 2005), and Pachys belong to the clade 
+#Neoornithischia; If you analyse Thyreophorans, use lower age of Silesaurs (See corresponding thyreophoran .tsv file) 
+#and the Triassic-Permian Boundary (251.902 Ma ago, the latest ICS), as there are no dinos 
+#knwon from the Permian yet
+
+
+moves.append( mvScale(psi, lambda=0.01, weight=1) )
+moves.append( mvScale(psi, lambda=0.1,  weight=1) )
+moves.append( mvScale(psi, lambda=1,    weight=1) )
+
+fbd_dist = dnBDSTP(r=0, origin=origin_time, lambda=speciation_rate, 
+mu=extinction_rate, psi=psi, rho=rho, taxa=taxa)
+
+#clade_tyrannosauroidea = clade("Kileskus", "Guanlong", "Tanycolagreus")
+#clade_allos = clade("Shidaisaurus", "Allosaurus_fragilis", "Sinraptor_dongi")
+#clade_alvarezsauroidea = clade("Haplocheirus", "Xiyunykus", "Bannykus", "Alvarezsaurus", "Shuvuuia")
+#constraints = v(clade_tyrannosauroidea, clade_allos, clade_alvarezsauroidea)
+
+#fbd_tree ~ dnConstrainedTopology(fbd_dist, constraints)
+fbd_tree ~ dnConstrainedTopology(fbd_dist)
+
+
+moves.append( mvFNPR(fbd_tree, weight=15.0) )
+moves.append( mvCollapseExpandFossilBranch(fbd_tree, origin_time, weight=6.0) )
+
+moves.append( mvNodeTimeSlideUniform(fbd_tree, weight=40.0) )
+moves.append( mvRootTimeSlideUniform(fbd_tree, origin_time, weight=5.0) )
+
+fossils = fbd_tree.getFossils()
+for(i in 1:fossils.size())
+{
+    t[i] := tmrca(fbd_tree, clade(fossils[i]))
+
+    a_i = fossils[i].getMinAge()
+    b_i = fossils[i].getMaxAge()
+
+    F[i] ~ dnUniform(t[i] - b_i, t[i] - a_i)
+    F[i].clamp( 0 )
+}
+
+moves.append( mvFossilTimeSlideUniform(fbd_tree, origin_time, weight=5.0) )
+
+num_samp_anc := fbd_tree.numSampledAncestors();
+
+age_Thyreos := tmrca(fbd_tree, clade("Pinacosaurus", "Kentrosaurus"))
+age_Ankys := tmrca(fbd_tree, clade("Pinacosaurus", "Scelidosaurus"))
+
+#pruned_tree := fnPruneTree(fbd_tree, prune=v(taxa[8],taxa[11]))
