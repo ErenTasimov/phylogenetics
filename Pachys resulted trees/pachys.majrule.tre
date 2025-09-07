@@ -1,0 +1,29 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=18;
+	Taxlabels
+		Acrotholus_audeti
+		Alaskacephale_gongloffi
+		Amtocephale_gobienses
+		Colepiocephale_lambei
+		Foraminacephale_brevis
+		Goyocephale_lattimorei
+		Homalocephale_calathocercos
+		Pachycephalosaurus_wyomingensis
+		Prenocephale_prenes
+		Psittacosaurus_mongolensis
+		Sinocephale_bexelli
+		Sphaerotholus_buchholtzae
+		Sphaerotholus_edmontonensis
+		Sphaerotholus_goodwini
+		Stegoceras_validum
+		Tylocephale_gilmorei
+		Wannanosaurus_yansiensis
+		Yinlong_downsi
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&U](Yinlong_downsi[&index=18,sampled_ancestor=0.993827,age_95%_HPD={89.437,96.1257}]:1.575167,Psittacosaurus_mongolensis[&index=17,sampled_ancestor=0.416874,age_95%_HPD={61.8192,77.0824}]:21.624770,(Tylocephale_gilmorei[&index=16,sampled_ancestor=0.713537,age_95%_HPD={6.11767,11.5411}]:24.911881,Stegoceras_validum[&index=15,sampled_ancestor=0.320982,age_95%_HPD={8.32595,10.3035}]:24.474067,Sphaerotholus_edmontonensis[&index=14,sampled_ancestor=0.238503,age_95%_HPD={3.43947,4.75216}]:29.675163,Homalocephale_calathocercos[&index=13,sampled_ancestor=0.534566,age_95%_HPD={0,5.75255}]:30.707349,Pachycephalosaurus_wyomingensis[&index=12,sampled_ancestor=0.499100,age_95%_HPD={0,2.75802}]:32.506580,Wannanosaurus_yansiensis[&index=11,sampled_ancestor=0.201691,age_95%_HPD={2.85369,15.3542}]:25.807268,Amtocephale_gobienses[&index=10,sampled_ancestor=0.995600,age_95%_HPD={17.3447,33.1733}]:8.740491,Foraminacephale_brevis[&index=9,sampled_ancestor=0.770043,age_95%_HPD={8.36715,11.2877}]:23.854869,Sphaerotholus_buchholtzae[&index=8,sampled_ancestor=0.005120]:33.765968,Alaskacephale_gongloffi[&index=7,sampled_ancestor=0.781150,age_95%_HPD={3.0015,11.3459}]:27.341174,Goyocephale_lattimorei[&index=6,sampled_ancestor=0.934641,age_95%_HPD={6.00778,16.6594}]:23.426291,Prenocephale_prenes[&index=5,sampled_ancestor=0.549193,age_95%_HPD={0,5.75437}]:30.615257,Sinocephale_bexelli[&index=4,sampled_ancestor=0.975027,age_95%_HPD={0.934648,25.5872}]:20.158309,Sphaerotholus_goodwini[&index=3,sampled_ancestor=0.599739,age_95%_HPD={6.83232,7.89025}]:26.419840,Colepiocephale_lambei[&index=2,sampled_ancestor=0.376368,age_95%_HPD={13.3022,14.01}]:20.120157,Acrotholus_audeti[&index=1,sampled_ancestor=0.890188,age_95%_HPD={17.3815,17.9218}]:16.120754)[&index=19,posterior=0.972707,age_95%_HPD={20.1653,56.1739}]:61.746112)[&index=20,posterior=0.335489,age_95%_HPD={90.475,99.6295}]:0.000000;
+End;

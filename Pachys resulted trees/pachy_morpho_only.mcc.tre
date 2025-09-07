@@ -1,0 +1,29 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=18;
+	Taxlabels
+		Acrotholus_audeti
+		Alaskacephale_gongloffi
+		Amtocephale_gobienses
+		Colepiocephale_lambei
+		Foraminacephale_brevis
+		Goyocephale_lattimorei
+		Homalocephale_calathocercos
+		Pachycephalosaurus_wyomingensis
+		Prenocephale_prenes
+		Psittacosaurus_mongolensis
+		Sinocephale_bexelli
+		Sphaerotholus_buchholtzae
+		Sphaerotholus_edmontonensis
+		Sphaerotholus_goodwini
+		Stegoceras_validum
+		Tylocephale_gilmorei
+		Wannanosaurus_yansiensis
+		Yinlong_downsi
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((((((((Acrotholus_audeti[&index=16,sampled_ancestor=0.000040,age_95%_HPD={0,0.495781}]:0.015339,Prenocephale_prenes[&index=6,sampled_ancestor=0.000013,age_95%_HPD={0,0.503357}]:-0.001900)[&index=19,posterior=0.398488,age_95%_HPD={0.005047,0.490943}]:-0.000971,Pachycephalosaurus_wyomingensis[&index=18,age_95%_HPD={0,0.387467}]:0.098244)[&index=20,posterior=0.101599,age_95%_HPD={0.055138,0.430868}]:0.024615,Sphaerotholus_goodwini[&index=3,sampled_ancestor=0.000013,age_95%_HPD={0,0.496166}]:0.031581)[&index=21,posterior=0.144278,age_95%_HPD={0.066323,0.435134}]:0.017480,Tylocephale_gilmorei[&index=14,age_95%_HPD={0,0.576073}]:0.012022)[&index=22,posterior=0.210704,age_95%_HPD={0.09055,0.452209}]:0.077755,(Sphaerotholus_buchholtzae[&index=13,age_95%_HPD={0,0.524076}]:0.028138,Sphaerotholus_edmontonensis[&index=8,age_95%_HPD={0,0.54594}]:0.028100)[&index=23,posterior=0.284010,age_95%_HPD={0.019949,0.537273}]:0.077206)[&index=24,posterior=0.156185,age_95%_HPD={0.145238,0.544567}]:0.023495,Sinocephale_bexelli[&index=5,age_95%_HPD={0,0.68546}]:0.030714)[&index=25,posterior=0.088225,age_95%_HPD={0.158169,0.600721}]:0.073065,(Amtocephale_gobienses[&index=17,sampled_ancestor=0.000040,age_95%_HPD={0,0.741778}]:-0.071508,Foraminacephale_brevis[&index=4,age_95%_HPD={0,0.643326}]:-0.015151)[&index=26,posterior=0.187264,age_95%_HPD={0.005202,0.65215}]:0.102723)[&index=27,posterior=0.094839,age_95%_HPD={0.196898,0.686873}]:0.105351,((Alaskacephale_gongloffi[&index=12,age_95%_HPD={0,0.710768}]:0.074709,Goyocephale_lattimorei[&index=7,age_95%_HPD={0,0.683481}]:-0.002916)[&index=28,posterior=0.260450,age_95%_HPD={0.037224,0.650499}]:0.042218,Homalocephale_calathocercos[&index=2,age_95%_HPD={0.081758,0.808009}]:-0.057666)[&index=29,posterior=0.096479,age_95%_HPD={0.106788,0.682033}]:0.146680)[&index=30,posterior=0.417888,age_95%_HPD={0.24663,0.834082}]:0.076259,Stegoceras_validum[&index=11,sampled_ancestor=0.000013,age_95%_HPD={0,0.872919}]:0.087359)[&index=31,posterior=0.650631,age_95%_HPD={0.301713,0.947014}]:0.144477,Colepiocephale_lambei[&index=10,age_95%_HPD={0,1.06312}]:0.210890)[&index=32,posterior=0.830469,age_95%_HPD={0.36145,1.19009}]:0.212219,Wannanosaurus_yansiensis[&index=9,sampled_ancestor=0.000013,age_95%_HPD={0.441876,1.44914}]:0.058728)[&index=33,posterior=0.996160,age_95%_HPD={0.495514,1.48701}]:0.258416,Psittacosaurus_mongolensis[&index=1,age_95%_HPD={0.619637,1.74127}]:0.068577,Yinlong_downsi[&index=15,age_95%_HPD={0.658835,1.77999}]:0.023474)[&index=34,posterior=1.000000,age_95%_HPD={0.678467,1.81107}]:0.000000;
+End;

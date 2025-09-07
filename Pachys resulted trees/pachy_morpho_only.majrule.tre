@@ -1,0 +1,29 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=18;
+	Taxlabels
+		Acrotholus_audeti
+		Alaskacephale_gongloffi
+		Amtocephale_gobienses
+		Colepiocephale_lambei
+		Foraminacephale_brevis
+		Goyocephale_lattimorei
+		Homalocephale_calathocercos
+		Pachycephalosaurus_wyomingensis
+		Prenocephale_prenes
+		Psittacosaurus_mongolensis
+		Sinocephale_bexelli
+		Sphaerotholus_buchholtzae
+		Sphaerotholus_edmontonensis
+		Sphaerotholus_goodwini
+		Stegoceras_validum
+		Tylocephale_gilmorei
+		Wannanosaurus_yansiensis
+		Yinlong_downsi
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&U](Psittacosaurus_mongolensis[&index=18,age_95%_HPD={0.619637,1.74127}]:0.069087,Yinlong_downsi[&index=17,age_95%_HPD={0.658835,1.77999}]:0.023112,(Wannanosaurus_yansiensis[&index=16,sampled_ancestor=0.000013,age_95%_HPD={0.441876,1.44914}]:0.054681,(Colepiocephale_lambei[&index=15,age_95%_HPD={0,1.06312}]:0.162154,(Homalocephale_calathocercos[&index=14,age_95%_HPD={0.081758,0.808009}]:0.157785,Sphaerotholus_goodwini[&index=13,sampled_ancestor=0.000013,age_95%_HPD={0,0.496166}]:0.410992,Foraminacephale_brevis[&index=12,age_95%_HPD={0,0.643326}]:0.256746,Sinocephale_bexelli[&index=11,age_95%_HPD={0,0.68546}]:0.282004,Prenocephale_prenes[&index=10,sampled_ancestor=0.000013,age_95%_HPD={0,0.503357}]:0.403270,Goyocephale_lattimorei[&index=9,age_95%_HPD={0,0.683481}]:0.254237,Sphaerotholus_edmontonensis[&index=8,age_95%_HPD={0,0.54594}]:0.386334,Stegoceras_validum[&index=7,sampled_ancestor=0.000013,age_95%_HPD={0,0.872919}]:0.067422,Alaskacephale_gongloffi[&index=6,age_95%_HPD={0,0.710768}]:0.356215,Sphaerotholus_buchholtzae[&index=5,age_95%_HPD={0,0.524076}]:0.381206,Tylocephale_gilmorei[&index=4,age_95%_HPD={0,0.576073}]:0.371764,Acrotholus_audeti[&index=3,sampled_ancestor=0.000040,age_95%_HPD={0,0.495781}]:0.422146,Amtocephale_gobienses[&index=2,sampled_ancestor=0.000040,age_95%_HPD={0,0.741778}]:0.201250,Pachycephalosaurus_wyomingensis[&index=1,age_95%_HPD={0,0.387467}]:0.517629)[&index=19,posterior=0.650631,age_95%_HPD={0.301713,0.947014}]:0.138154)[&index=20,posterior=0.830469,age_95%_HPD={0.36145,1.19009}]:0.205337)[&index=21,posterior=0.996160,age_95%_HPD={0.495514,1.48701}]:0.259027)[&index=22,posterior=1.000000,age_95%_HPD={0.678467,1.81107}]:0.000000;
+End;

@@ -1,0 +1,29 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=18;
+	Taxlabels
+		Acrotholus_audeti
+		Alaskacephale_gongloffi
+		Amtocephale_gobienses
+		Colepiocephale_lambei
+		Foraminacephale_brevis
+		Goyocephale_lattimorei
+		Homalocephale_calathocercos
+		Pachycephalosaurus_wyomingensis
+		Prenocephale_prenes
+		Psittacosaurus_mongolensis
+		Sinocephale_bexelli
+		Sphaerotholus_buchholtzae
+		Sphaerotholus_edmontonensis
+		Sphaerotholus_goodwini
+		Stegoceras_validum
+		Tylocephale_gilmorei
+		Wannanosaurus_yansiensis
+		Yinlong_downsi
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&U]((Sphaerotholus_buchholtzae[&index=18,sampled_ancestor=0.299356,age_95%_HPD={0,4.70796}]:38.419757,Goyocephale_lattimorei[&index=17,sampled_ancestor=0.944294,age_95%_HPD={0,13.6968}]:36.760433,Acrotholus_audeti[&index=16,sampled_ancestor=0.900481,age_95%_HPD={15.3717,19.5287}]:21.834947,Pachycephalosaurus_wyomingensis[&index=15,sampled_ancestor=0.879602,age_95%_HPD={0,12.8931}]:37.379596,Sphaerotholus_edmontonensis[&index=14,sampled_ancestor=0.704257,age_95%_HPD={0,15.0089}]:34.270274,Prenocephale_prenes[&index=13,sampled_ancestor=0.438954,age_95%_HPD={0,4.54668}]:38.599306,Wannanosaurus_yansiensis[&index=12,sampled_ancestor=0.000147,age_95%_HPD={0,5.00178}]:37.697152,Foraminacephale_brevis[&index=11,sampled_ancestor=0.816402,age_95%_HPD={4.62947,16.784}]:28.876561,Sinocephale_bexelli[&index=10,sampled_ancestor=0.760483,age_95%_HPD={0,15.5139}]:33.524702,Alaskacephale_gongloffi[&index=9,sampled_ancestor=0.270596,age_95%_HPD={0,4.66748}]:38.492561,Tylocephale_gilmorei[&index=8,sampled_ancestor=0.815936,age_95%_HPD={4.91016,16.6941}]:29.089308,Stegoceras_validum[&index=7,sampled_ancestor=0.538699,age_95%_HPD={4.83121,16.7282}]:28.758155,Homalocephale_calathocercos[&index=6,sampled_ancestor=0.457594,age_95%_HPD={0,4.93674}]:38.185211,Amtocephale_gobienses[&index=5,sampled_ancestor=0.982640,age_95%_HPD={16.2064,33.2483}]:13.954893,Sphaerotholus_goodwini[&index=4,sampled_ancestor=0.867695,age_95%_HPD={5.34607,16.8661}]:28.608703,Colepiocephale_lambei[&index=3,sampled_ancestor=0.465660,age_95%_HPD={4.77645,16.6886}]:29.764824)[&index=19,posterior=0.832589,age_95%_HPD={17.7501,73.641}]:73.670835,(Psittacosaurus_mongolensis[&index=2,sampled_ancestor=0.117385,age_95%_HPD={44.0955,55.084}]:39.774875,Yinlong_downsi[&index=1,sampled_ancestor=0.987347]:0.000000)[&index=20,posterior=0.677538,age_95%_HPD={86.865,94.5563}]:22.790587)[&index=21,posterior=0.816789,age_95%_HPD={92.4282,132.074}]:0.000000;
+End;
