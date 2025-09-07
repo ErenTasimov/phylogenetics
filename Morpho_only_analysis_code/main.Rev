@@ -1,0 +1,31 @@
+setwd("/Users/erent/Desktop/PaleoMasters/Second_Semester/Phylogenetics/own_test_exercise") #adjust coorespondingly
+#source("scripts/main.Rev")
+
+
+morpho <- readDiscreteCharacterData("data/Norman_2021a_edited.nex") #adjust coorespondingly
+
+num_taxa <- morpho.size()
+num_branches <- 2 * num_taxa - 2
+taxa <- morpho.names()
+
+moves = VectorMoves()
+
+source("scripts/mk_model_tree.Rev")
+source("scripts/mk_model_gamma.Rev")
+
+mymodel = model(phylogeny)
+
+monitors = VectorMonitors()
+
+monitors.append( mnModel(filename="output/morpho_ankys.log", printgen=10))
+monitors.append( mnFile(filename="output/morpho_ankys.trees", printgen=10, phylogeny))
+monitors.append( mnScreen(printgen=10))
+
+mymcmc = mcmc(mymodel, monitors, moves)
+mymcmc.run(generations=50000, tuningInterval=20)
+
+
+trace = readTreeTrace("output/morpho_ankys.trees")      # Read in the tree trace
+
+mccTree(trace, file="output/morpho_ankys.mcc.tre" )     # Construct and save the maximum clade credibility (MCC) tree
+consensusTree(trace, file="output/morpho_ankys.majrule.tre")

@@ -1,0 +1,21 @@
+br_len_lambda ~ dnExp(0.2)
+moves.append(mvScale(br_len_lambda, weight=2))
+
+#clade_pachys = clade("Pachycephalosaurus_wyomingensis", "Sinocephale_bexelli",
+# #"Sinocephale_bexelli", "Prenocephale_prenes", "Goyocephale_lattimorei", 
+# "Alaskacephale_gongloffi", "Wannanosaurus_yansiensis", "Homalocephale_calathocercos",
+# #"Tylocephale_gilmorei", "Prenocephale_prenes", "Amtocephale_gobienses", "Acrotholus_audeti",
+# #"Foraminacephale_brevis", "Colepiocephale_lambei", "Stegoceras_validum", 
+# #"Sphaerotholus_edmontonensis", "Sphaerotholus_buchholtzae", "Sphaerotholus_goodwini")
+#constraints = v(clade_pachys)
+
+outgroup = clade("Silesaurus")
+
+
+phylogeny ~ dnUniformTopologyBranchLength(taxa, outgroup, branchLengthDistribution=dnExponential(br_len_lambda))
+
+moves.append(mvNNI(phylogeny, weight=num_branches/2.0))
+moves.append(mvSPR(phylogeny, weight=num_branches/10.0))
+moves.append(mvBranchLengthScale(phylogeny, weight=num_branches))
+
+tree_length := phylogeny.treeLength()
