@@ -1,0 +1,28 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=17;
+	Taxlabels
+		Dryosaurus
+		Emausaurus
+		Euoplocephalus
+		Huayangosaurus
+		Hypsilophodon
+		Jinyunpelta
+		Kentrosaurus
+		Kunbarrasaurus
+		Lesothosaurus
+		Pinacosaurus
+		Sauropelta
+		Scelidosaurus
+		Scutellosaurus
+		Silesaurus
+		Silvisaurus
+		Stegosaurus
+		Struthiosaurus
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&U](Silesaurus[&index=17,sampled_ancestor=0.196880,age_95%_HPD={146.192,159.871}]:10.633364,((Lesothosaurus[&index=16,sampled_ancestor=0.970357]:0.000000,(Dryosaurus[&index=15,sampled_ancestor=0.964446,age_95%_HPD={63.441,80.3536}]:4.779888,Hypsilophodon[&index=14,age_95%_HPD={40.7468,53.2546}]:29.373679)[&index=18,posterior=0.035554,age_95%_HPD={66.0934,84.9044}]:44.723871)[&index=19,posterior=0.970090,age_95%_HPD={112.967,128.134}]:23.850425,((Huayangosaurus[&index=13,sampled_ancestor=0.988267]:0.000000,(Kentrosaurus[&index=12,sampled_ancestor=0.999867]:0.000000,Stegosaurus[&index=11,age_95%_HPD={62.0513,77.669}]:5.794900)[&index=20,posterior=0.999867,age_95%_HPD={65.5524,83.6813}]:13.679094)[&index=21,posterior=0.988267,age_95%_HPD={79.0379,97.5243}]:45.751562,(Scutellosaurus[&index=10,sampled_ancestor=0.707391]:0.000000,(Emausaurus[&index=9,sampled_ancestor=0.053109,age_95%_HPD={95.1319,111.507}]:15.208134,(Scelidosaurus[&index=8,sampled_ancestor=0.997022]:0.000000,(((Pinacosaurus[&index=7,sampled_ancestor=1.000000]:0.000000,Euoplocephalus[&index=6,age_95%_HPD={0,6.59396}]:1.754499)[&index=22,posterior=1.000000,age_95%_HPD={0.000144,8.05647}]:33.954206,(Sauropelta[&index=5,sampled_ancestor=1.000000]:0.000000,(Silvisaurus[&index=4,sampled_ancestor=0.929070]:0.000000,Struthiosaurus[&index=3,age_95%_HPD={0,6.40039}]:24.113207)[&index=23,posterior=0.776232,age_95%_HPD={18.1476,31.5488}]:5.126461)[&index=24,posterior=0.693436,age_95%_HPD={21.7188,39.4209}]:6.400467)[&index=25,posterior=0.815475,age_95%_HPD={26.3672,46.7083}]:19.611970,(Kunbarrasaurus[&index=2,age_95%_HPD={18.8644,32.8507}]:16.565359,Jinyunpelta[&index=1,sampled_ancestor=0.090440,age_95%_HPD={21.295,37.9594}]:12.363614)[&index=26,posterior=0.806053,age_95%_HPD={31.1015,54.3856}]:13.280115)[&index=27,posterior=1.000000,age_95%_HPD={41.6847,70.3196}]:60.324696)[&index=28,posterior=0.934181,age_95%_HPD={110.148,122.382}]:3.060763)[&index=29,posterior=0.853207,age_95%_HPD={112.319,126.329}]:3.487130)[&index=30,posterior=0.615084,age_95%_HPD={116.668,129.028}]:12.246964)[&index=31,posterior=0.913204,age_95%_HPD={123.365,146.354}]:9.730923)[&index=32,posterior=0.991200,age_95%_HPD={131.432,157.18}]:18.801930)[&index=33,posterior=0.804853,age_95%_HPD={153.847,171.763}]:0.000000;
+End;

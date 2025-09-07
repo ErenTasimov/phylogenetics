@@ -1,0 +1,29 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=18;
+	Taxlabels
+		Dryosaurus
+		Edmontonia
+		Emausaurus
+		Euoplocephalus
+		Huayangosaurus
+		Hypsilophodon
+		Jinyunpelta
+		Kentrosaurus
+		Kunbarrasaurus
+		Lesothosaurus
+		Pinacosaurus
+		Sauropelta
+		Scelidosaurus
+		Scutellosaurus
+		Silesaurus
+		Silvisaurus
+		Stegosaurus
+		Struthiosaurus
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&U](Silesaurus[&index=18,age_95%_HPD={0.893387,1.56904}]:0.165888,Lesothosaurus[&index=17,age_95%_HPD={1.06479,1.72778}]:0.011745,((Dryosaurus[&index=16,age_95%_HPD={0.882677,1.52875}]:0.061129,Hypsilophodon[&index=15,age_95%_HPD={0.916888,1.56896}]:0.022132)[&index=19,posterior=1.000000,age_95%_HPD={0.940502,1.59394}]:0.077075,((Huayangosaurus[&index=14,age_95%_HPD={0.586921,1.30099}]:0.009904,(Stegosaurus[&index=13,age_95%_HPD={0.442544,1.1542}]:0.041119,Kentrosaurus[&index=12,age_95%_HPD={0.456537,1.17037}]:0.009602)[&index=20,posterior=0.995734,age_95%_HPD={0.469699,1.17963}]:0.098303)[&index=21,posterior=0.992802,age_95%_HPD={0.553159,1.2511}]:0.278372,(Scutellosaurus[&index=11,age_95%_HPD={0.808137,1.39595}]:0.009965,(Emausaurus[&index=10,age_95%_HPD={0.723897,1.2969}]:0.015043,(Scelidosaurus[&index=9,age_95%_HPD={0.664133,1.22923}]:0.022792,(Kunbarrasaurus[&index=8,age_95%_HPD={0.283433,0.722902}]:0.038331,(Jinyunpelta[&index=7,age_95%_HPD={0.168765,0.558122}]:0.036129,((Pinacosaurus[&index=6,age_95%_HPD={0,0.273234}]:0.006123,Euoplocephalus[&index=5,age_95%_HPD={0,0.275071}]:0.005921)[&index=22,posterior=0.992269,age_95%_HPD={0.001536,0.277615}]:0.076010,(Silvisaurus[&index=4,age_95%_HPD={0,0.135525}]:0.055749,Sauropelta[&index=3,age_95%_HPD={0,0.15102}]:0.047943,Edmontonia[&index=2,sampled_ancestor=0.000267,age_95%_HPD={0.011134,0.186047}]:0.021545,Struthiosaurus[&index=1,age_95%_HPD={0,0.045404}]:0.106099)[&index=23,posterior=0.983204,age_95%_HPD={0.050556,0.201113}]:0.116825)[&index=24,posterior=1.000000,age_95%_HPD={0.123331,0.34265}]:0.173600)[&index=25,posterior=0.964809,age_95%_HPD={0.229862,0.57763}]:0.145312)[&index=26,posterior=1.000000,age_95%_HPD={0.360078,0.755329}]:0.415687)[&index=27,posterior=0.874700,age_95%_HPD={0.699198,1.24028}]:0.050218)[&index=28,posterior=0.949613,age_95%_HPD={0.748004,1.30305}]:0.074918)[&index=29,posterior=0.918955,age_95%_HPD={0.82306,1.38891}]:0.118168)[&index=30,posterior=0.994668,age_95%_HPD={0.906113,1.53307}]:0.119720)[&index=31,posterior=0.949347,age_95%_HPD={1.03279,1.67936}]:0.051179)[&index=32,posterior=1.000000,age_95%_HPD={1.05885,1.72166}]:0.000000;
+End;

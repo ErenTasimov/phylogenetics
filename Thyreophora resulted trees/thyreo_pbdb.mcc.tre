@@ -1,0 +1,28 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=17;
+	Taxlabels
+		Dryosaurus
+		Emausaurus
+		Euoplocephalus
+		Huayangosaurus
+		Hypsilophodon
+		Jinyunpelta
+		Kentrosaurus
+		Kunbarrasaurus
+		Lesothosaurus
+		Pinacosaurus
+		Sauropelta
+		Scelidosaurus
+		Scutellosaurus
+		Silesaurus
+		Silvisaurus
+		Stegosaurus
+		Struthiosaurus
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&R]((((((((((Struthiosaurus[&index=5,age_95%_HPD={0,7.84098}]:23.439436,Silvisaurus[&index=12,sampled_ancestor=0.911026]:0.000000)[&index=18,posterior=0.502689,age_95%_HPD={18.9762,32.0687}]:5.674236,Sauropelta[&index=1,sampled_ancestor=1.000000]:0.000000)[&index=19,posterior=0.480956,age_95%_HPD={22.9151,39.8076}]:5.295107,(Euoplocephalus[&index=16,age_95%_HPD={0,7.6248}]:1.214021,Pinacosaurus[&index=4,sampled_ancestor=0.999911]:0.000000)[&index=20,posterior=0.999911,age_95%_HPD={1.4e-05,9.17198}]:33.664517)[&index=21,posterior=0.848229,age_95%_HPD={26.6425,47.0896}]:19.505429,(Jinyunpelta[&index=10,sampled_ancestor=0.125683,age_95%_HPD={21.2395,39.1108}]:12.871941,Kunbarrasaurus[&index=2,age_95%_HPD={19.4759,33.2264}]:17.074452)[&index=22,posterior=0.749300,age_95%_HPD={31.487,55.4799}]:12.464606)[&index=23,posterior=1.000000,age_95%_HPD={41.6082,70.5912}]:60.848516,Scelidosaurus[&index=11,sampled_ancestor=0.995778]:0.000000)[&index=24,posterior=0.949691,age_95%_HPD={110.445,123.036}]:3.161910,Emausaurus[&index=14,sampled_ancestor=0.030265,age_95%_HPD={95.7679,111.82}]:15.824891)[&index=25,posterior=0.877250,age_95%_HPD={112.762,127.477}]:3.158160,Scutellosaurus[&index=6,sampled_ancestor=0.620861]:0.000000)[&index=26,posterior=0.553042,age_95%_HPD={116.95,129.023}]:14.150940,((Stegosaurus[&index=8,age_95%_HPD={62.2609,80.4178}]:5.646850,Kentrosaurus[&index=9,sampled_ancestor=0.999778]:0.000000)[&index=27,posterior=0.999778,age_95%_HPD={67.002,87.4097}]:12.847595,Huayangosaurus[&index=15,sampled_ancestor=0.982979]:0.000000)[&index=28,posterior=0.982979,age_95%_HPD={78.9178,98.5101}]:47.742233)[&index=29,posterior=0.921870,age_95%_HPD={124.439,150.82}]:9.803696,((Hypsilophodon[&index=13,age_95%_HPD={40.5274,54.0616}]:22.910233,Dryosaurus[&index=3,sampled_ancestor=0.951958]:0.000000)[&index=30,posterior=0.951958,age_95%_HPD={61.3685,78.8585}]:50.754404,Lesothosaurus[&index=7,sampled_ancestor=0.966446]:0.000000)[&index=31,posterior=0.966446,age_95%_HPD={112.638,128.517}]:26.310249)[&index=32,posterior=0.952624,age_95%_HPD={132.499,161.795}]:19.821936,Silesaurus[&index=17,sampled_ancestor=0.144216,age_95%_HPD={146.657,160.71}]:13.444206)[&index=33,posterior=0.867517,age_95%_HPD={155.251,177.651}]:0.000000;
+End;

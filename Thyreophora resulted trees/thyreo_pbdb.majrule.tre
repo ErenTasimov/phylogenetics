@@ -1,0 +1,28 @@
+#NEXUS
+
+	Begin taxa;
+	Dimensions ntax=17;
+	Taxlabels
+		Dryosaurus
+		Emausaurus
+		Euoplocephalus
+		Huayangosaurus
+		Hypsilophodon
+		Jinyunpelta
+		Kentrosaurus
+		Kunbarrasaurus
+		Lesothosaurus
+		Pinacosaurus
+		Sauropelta
+		Scelidosaurus
+		Scutellosaurus
+		Silesaurus
+		Silvisaurus
+		Stegosaurus
+		Struthiosaurus
+		;
+End;
+
+Begin trees;
+tree TREE1 = [&U](Silesaurus[&index=17,sampled_ancestor=0.838592,age_95%_HPD={146.362,159.105}]:3.873640,((Lesothosaurus[&index=16,sampled_ancestor=0.984890]:0.000000,(Dryosaurus[&index=15,sampled_ancestor=0.994667]:0.000000,Hypsilophodon[&index=14,age_95%_HPD={40.9113,52.6981}]:22.528003)[&index=18,posterior=0.994667,age_95%_HPD={60.928,78.0601}]:51.775535)[&index=19,posterior=0.984535,age_95%_HPD={113.678,127.741}]:17.776046,((Huayangosaurus[&index=13,sampled_ancestor=0.995823]:0.000000,(Kentrosaurus[&index=12,sampled_ancestor=0.999733]:0.000000,Stegosaurus[&index=11,age_95%_HPD={61.9869,77.6513}]:5.908371)[&index=20,posterior=0.999733,age_95%_HPD={67.0489,84.2521}]:11.991566)[&index=21,posterior=0.995823,age_95%_HPD={79.9338,96.5744}]:42.794500,(Scutellosaurus[&index=10,sampled_ancestor=0.942405]:0.000000,(Emausaurus[&index=9,sampled_ancestor=0.148431,age_95%_HPD={97.1216,110.869}]:14.374714,(Scelidosaurus[&index=8,sampled_ancestor=0.998756]:0.000000,(((Pinacosaurus[&index=7,sampled_ancestor=0.940894]:0.000000,Euoplocephalus[&index=6,sampled_ancestor=0.059017,age_95%_HPD={0,6.04957}]:1.174434)[&index=22,posterior=0.940894,age_95%_HPD={1.4e-05,7.33027}]:31.748709,(Silvisaurus[&index=5,sampled_ancestor=0.964981]:0.000000,(Struthiosaurus[&index=4,age_95%_HPD={0,6.86857}]:17.656244,Sauropelta[&index=3,sampled_ancestor=1.000000]:0.000000)[&index=23,posterior=0.730157,age_95%_HPD={12.3453,25.6865}]:5.707763)[&index=24,posterior=0.652209,age_95%_HPD={18.4094,31.4112}]:8.570156)[&index=25,posterior=0.636299,age_95%_HPD={24.3049,42.9045}]:17.931273,(Kunbarrasaurus[&index=2,age_95%_HPD={19.6354,32.707}]:15.018282,Jinyunpelta[&index=1,sampled_ancestor=0.299262,age_95%_HPD={21.239,39.5397}]:10.357647)[&index=26,posterior=0.577815,age_95%_HPD={30.3246,52.3974}]:10.190303)[&index=27,posterior=1.000000,age_95%_HPD={38.0364,64.339}]:64.780835)[&index=28,posterior=0.825349,age_95%_HPD={110.648,121.15}]:2.726313)[&index=29,posterior=0.792107,age_95%_HPD={112.645,124.408}]:4.038367)[&index=30,posterior=0.885166,age_95%_HPD={117.017,128.287}]:8.300140)[&index=31,posterior=0.905520,age_95%_HPD={122.371,139.401}]:7.721618)[&index=32,posterior=1.000000,age_95%_HPD={130.061,146.914}]:17.596738)[&index=33,posterior=0.161408,age_95%_HPD={150.798,162.877}]:0.000000;
+End;
